@@ -65,7 +65,7 @@ interface IVotes {
 
     event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender);
 
-      struct Protagonist {
+      struct Person {
 
         bytes32 role;
 
@@ -75,7 +75,7 @@ interface IVotes {
         
       }
     
-    function protagonists (address addressRole) view external returns (Protagonist memory);
+    function persons (address addressRole) view external returns (Person memory);
 
     function numberAdmin () view external returns (uint256);
   
